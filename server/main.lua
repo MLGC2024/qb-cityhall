@@ -69,6 +69,12 @@ RegisterNetEvent('qb-cityhall:server:requestId', function(item, hall)
         info.firstname = Player.PlayerData.charinfo.firstname
         info.lastname = Player.PlayerData.charinfo.lastname
         info.birthdate = Player.PlayerData.charinfo.birthdate
+    elseif item == "huntinglicense" then -- added for hunting by Pamela
+		info.citizenid = Player.PlayerData.citizenid
+        info.firstname = Player.PlayerData.charinfo.firstname
+        info.lastname = Player.PlayerData.charinfo.lastname
+        info.birthdate = Player.PlayerData.charinfo.birthdate
+		info.gender = Player.PlayerData.charinfo.gender
     else
         return false -- DropPlayer(src, 'Attempted exploit abuse')
     end
