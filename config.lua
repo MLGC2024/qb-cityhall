@@ -17,9 +17,9 @@ Config.Cityhalls = {
         coords = vec3(-265.0, -963.6, 31.2),
         showBlip = true,
         blipData = {
-            sprite = 487,
+            sprite = 419,
             display = 4,
-            scale = 0.65,
+            scale = 0.8,
             colour = 0,
             title = 'City Services'
         },
