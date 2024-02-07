@@ -288,6 +288,7 @@ end)
 RegisterNUICallback('applyJob', function(job, cb)
     if inRangeCityhall then
         TriggerServerEvent('qb-cityhall:server:ApplyJob', job, Config.Cityhalls[closestCityhall].coords)
+        TriggerEvent('wais:addmissionxp:getjob', 1) --added by pamela for wais battlepass
     else
         QBCore.Functions.Notify(Lang:t('error.not_in_range'), 'error')
     end
